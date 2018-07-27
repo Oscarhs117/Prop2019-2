@@ -14,17 +14,35 @@
 ]{geometry}
 
 \author{Oscar Hernandez Salinas}
-\title{Mi titulo}
+\title{Me gusta la leche con chocolate}
 \date{\today}
-
+%\renewcommand{/labelitemize}{$\bullet$}  %renombrar un comando
 \begin{document}
-
 \maketitle
+
+
+\tableofcontens
+\addcontentsline{toc}{chapter}{Indice}
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Indice de Figuras}
+
+\listoftables
+\addcontentsline{toc}{chapter}{Indice de Tablas}
+
+Plantilla de \LaTeX.
+\chapter*{Introduccion}
+When todo empezo....
+ashfbasiuhfaisjdhfiasd
+asfjhbasldkjfnaslk
+asdlkfjvbadlsjf
+asdkvjnasldjnvf
 
 \chapter{Oscar}
 
 \section{Un poco sobre mi}
 Me llamo juan perez y me gusta la pizza
+Me interesa la lectura ~\cite{}
 
 \subsection{Hobbies}
 \begin{enumerate}
@@ -32,26 +50,57 @@ Me llamo juan perez y me gusta la pizza
 \item Basket
 \item Anime
 \item Morritas de 15
-\end {enumerate}
+\item Gatitos
+\item Mapaches
+\item Chocolate
+\end{enumerate}
 
 \begin{figure}
-  \includegraphics[scale=0.25]{IMG\gatito.jpg}
-  \caption{Imagen de un gatito}
+  \includegraphics[scale=0.25]{IMG\Gatito.png}
+  \caption{Imagen de un gatito <3 }
+  \label{fig:Gatito}
 \end{figure}
 
+\begin{table}[h]
+  \centering
+  \begin{tabular}{| c | c | c |}
+    \hline
+    Operando & Operando & Resultado\\\hline
+    $+$ & $+$ & $+$\\\hline
+    $+$ & $-$ & $-$\\\hline
+    $-$ & $+$ & $-$\\\hline
+    $-$ & $-$ & $+$\\\hline    
+  \end{tabular}
+  \label{tab:Signos}
+\end{table}
+
+
+Podemos ver un lindo gatito
+\emph{\textbf{Figura}}~\ref{fig:Gatito}
+
+\section{Otras cosas}
 \begin{itemize}
 \item tengo hambre
 \item me gusta el pan
 \item Holi boli crayoli
 \end{itemize}
 
+\section{La historia de mi vida}
+Era hace una vez en un pais muy lejano....
 
+\newpage
+\section{Matematicas}
+Algunas formulas mamalonas:
+\begin{itemize}
+\item $c^2 = a^2 + b^2
+\item $x = -b \pm \frag{\sqrt{b^2-4ac}}{2a}$
+\end{itemize}
 
-
-Plantilla de \LaTeX.
+Aqui podemos ver una tabla mamalona ;v
+\emph{\textbf{Tabla}}~\ref{tab:Signos}
 
 % https://www.lipsum.com
-\subsection{Lorem ipsum}
+\section{Lorem ipsum (No se que seam :v)}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus ligula,
 tristique ut erat eu, elementum ullamcorper elit. Nullam vel aliquam neque, at
@@ -94,5 +143,8 @@ dolor vitae pharetra fermentum. Nulla hendrerit massa et magna lobortis
 porttitor. Donec venenatis commodo erat ut dignissim. Quisque vestibulum eros
 mollis libero pulvinar tristique et in nisl. Quisque finibus feugiat purus,
 vehicula aliquam mi malesuada molestie.
+
+\bibliographystyle{acm}
+\bibliography{bibliografia}
 
 \end{document}
